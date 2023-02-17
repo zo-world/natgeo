@@ -1,2 +1,0 @@
-# natgeo
-In-class excercise.

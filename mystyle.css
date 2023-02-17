@@ -1,0 +1,29 @@
+/*global*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --primary:#ffcc00;
+}
+body{
+  font-family: 'Lato', sans-serif;
+  background-color: black;
+  color: white;
+}
+h1, h2, h3{
+  text-align: center;
+}
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+}
+/*utilities*/
+
+/*nav*/
+nav.navigation{
+  background-color: white;
+}
