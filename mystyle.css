@@ -12,7 +12,7 @@ body{
   background-color: black;
   color: white;
 }
-h1, h2, h3{
+h1{
   text-align: center;
 }
 a{
@@ -22,7 +22,13 @@ img{
   max-width: 100%;
 }
 /*utilities*/
-
+.read-btn{
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 14px;
+}
 /*nav*/
 nav.navigation{
   display: flex;
@@ -33,14 +39,17 @@ nav.navigation{
 }
 .logo-border{
   height: 35px;
+  padding-left: 30px;
 }
 .logo{
 display: none;
 }
 .link-login{
   text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
   color: black;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
 }
 .link-search{
   display: none;
@@ -49,9 +58,101 @@ display: none;
   display: none;
 }
 .link-subs{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 4px;
+  background-color: black;
+  padding: 15px;
 }
 .link-menu{
   display: none;
 }
 .link-angle{
+  margin-right: 30px;
+  color: black;
+}
+/*header*/
+.welcome-msg{
+  text-align: center;
+  padding: 75px;
+}
+.welcome-msg h1{
+  text-transform: uppercase;
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 4px;
+}
+.welcome-msg a{
+  text-decoration:underline #ffcc00;
+  color: white;
+}
+.welcome-msg p{
+  letter-spacing: 1px;
+}
+/*main-news*/
+.main-news{
+  position: relative;/*parent*/
+  height: 450px;
+}
+.main-news img{
+  height: 450px;
+  width: 100%;
+}
+.main-news-text{
+  position: absolute;/*child*/
+  top: 220px;
+  left: 30px;
+}
+.main-news-text h3{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  margin-right: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+.main-news-text p{
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+/*secondary-news*/
+.secondary-news{
+  height: 520px;
+  margin-bottom: 50px;
+}
+.secondary-news-img{
+  height: 380px;
+}
+.secondary-news-img img{
+  height: 100%;
+  width: 100%;
+}
+.secondary-news-text{
+  height: 120px;
+  background-color: white;
+  padding: 50px 30px;
+  color: black;
+}
+.secondary-news-text h3{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+.secondary-news-text p{
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.secondary-news-text .read-btn{
+  color: black;
 }
