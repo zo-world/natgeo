@@ -25,5 +25,33 @@ img{
 
 /*nav*/
 nav.navigation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   background-color: white;
+}
+.logo-border{
+  height: 35px;
+}
+.logo{
+display: none;
+}
+.link-login{
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 2px;
+}
+.link-search{
+  display: none;
+}
+.link-news{
+  display: none;
+}
+.link-subs{
+}
+.link-menu{
+  display: none;
+}
+.link-angle{
 }
