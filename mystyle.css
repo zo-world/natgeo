@@ -27,11 +27,16 @@ img{
   color: white;
   letter-spacing: 2px;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 13px;
 }
 .container{
   width: 95%;
   margin: 0 auto;
+}
+@media(min-width: 768px){
+  .container{
+    width: 65%;
+  }
 }
 /*nav*/
 nav.navigation{
@@ -82,7 +87,39 @@ display: none;
   margin-right: 30px;
   color: black;
 }
+@media(min-width:768px){
+  .logo-border{
+    display: none;
+  }
+  .logo{
+    display: block;
+    height: 35px;
+    padding-left: 30px;
+  }
+  .link-search{
+    display: inline-block;
+    color: black;
+    height: 10px;
+    padding-left: 30px;
+  }
+  .link-news{
+    display: inline-block;
+    height: 30px;
+    padding-left: 30px;
+  }
+  .link-menu{
+    display: inline-block;
+    height: 30px;
+    padding-left: 30px;
+  }
+}
 /*header*/
+@media(min-width:768px){
+  header h1{
+    font-size: 75px;
+  }
+
+}
 .welcome-msg{
   text-align: center;
   padding: 75px;
@@ -177,21 +214,34 @@ display: none;
 .secondary-news-text .read-btn{
   color: black;
 }
+@media(min-width:768px){
+main{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .secondary-news-container{
+    display: flex;
+  }
+}
 /*today's picks*/
 .todays-title{
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 24px;
+  margin-bottom: 32px;
+  line-height: 1.5;
 }
 
 .todays-item{
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  margin-bottom: 30px;
 }
 .todays-item-img{
-  width: 85px;
-  height: 85px;
+  width: 90px;
+  height: 90px;
+  margin-right: 20px;
 }
 .todays-item img{
   width: 100%;
@@ -199,5 +249,23 @@ display: none;
   margin-right: 20px;
 }
 .todays-item-text{
-
+  display: block;
+  position: relative;
+}
+.todays-item-text h3{
+  font-size: 14px;
+  padding-bottom: 6px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+.todays-item-text p{
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  line-height: 1.5;
+}
+.paid-content{
+  background-color: white;
+  color: black;
 }

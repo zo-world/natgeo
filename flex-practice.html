@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexBox Practice</title>
+  <style>
+    header.flex-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      height: 300px;
+      background-color: #dedede;
+    }
+    header.flex-image{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: grey;
+      width: 150px;
+      height: 150px;
+    }
+    main.flex-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      height: 300px;
+    }
+    main.flex-container .list-container{
+      width: 50%;
+      height: 400px;
+      background-color: #a5f3ff;
+    }
+    main.flex-image{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: grey;
+      width: 100%;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <header class="flex-container">
+      <div class="flex-image">Image</div>
+      <h1>This is an H1</h1>
+  </header>
+  
+  <main class="flex-container">
+    <div class="list-container">
+      <h2>This is a list:</h2>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </div>
+    <div class="text-container">
+      <div class="flex-image">Insert any image</div>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At voluptate magnam eligendi illo, sint sequi nihil consequatur totam quaerat voluptatibus deleniti voluptas quidem veritatis dignissimos voluptatum, debitis ut labore odit?</p>
+    </div>
+  </main>
+</body>
+</html>
